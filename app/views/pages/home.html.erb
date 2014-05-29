@@ -1,0 +1,82 @@
+<div class="home">
+  <div class="bg-center">
+    <div class="row">
+      <div class="small-9 columns">
+        <h1>A new way to play Minecraft.</h1><a class="about" href="#">Learn more &rarr;</a>
+      </div>
+      <div class="small-3 columns">
+        <p class="come-on">Sign up and join Foundry in premiere !</p>
+        <a class="signup-button" href="#signup" data-reveal-id="signup">Sign up for a new account</a>
+        <a class="signin-button" href="#" data-reveal-id="signin">Sign in to your account</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Reveals -->
+    <!-- Signup -->
+    <div id="signup" class="form-reveal reveal-modal tiny signup-reveal" data-reveal>
+      <h4>Sign up for a Foundry account</h4>
+      <%= form_for(:user, :url => registration_path(:user)) do |f| %>
+         <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <%= f.label :username, :class => 'prefix' %>
+          </div>
+          <div class="small-9 large-10 columns">
+            <%= f.text_field :username, autofocus: true, :placeholder => "Choose an username" %>
+          </div>
+        </div>
+
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <%= f.label :email, :class => 'prefix' %>
+          </div>
+          <div class="small-9 large-10 columns">
+            <%= f.email_field :email, :placeholder => "Just to keep you in touch" %>
+          </div>
+        </div>
+
+         <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <%= f.label :password, :class => 'prefix' %>
+          </div>
+          <div class="small-9 large-10 columns">
+            <%= f.password_field :password, autocomplete: "off", :placeholder => "Password" %>
+          </div>
+        </div>
+        <%= f.submit "Sign me up. I want to play !", :class => 'button success expand' %>
+      <% end %>
+    </div>
+    <!-- End Signup -->
+    <!-- Signin -->
+    <div id="signin" class="form-reveal reveal-modal tiny signin-reveal" data-reveal>
+      <h4>Signin to Foundry</h4>
+      <%= form_for(:user, :url => session_path(:user)) do |f| %>
+
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <%= f.label :email, :class => 'prefix' %>
+          </div>
+          <div class="small-9 large-10 columns">
+            <%= f.email_field :email, autofocus: true, placeholder: "Your email" %>
+          </div>
+        </div>
+
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <%= f.label :password, :class => 'prefix' %>
+          </div>
+          <div class="small-9 large-10 columns">
+            <%= f.password_field :password, autocomplete: "off", placeholder: "Your password" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <%= f.check_box :remember_me, checked: true %>
+          <%= f.label :remember_me %>
+        </div>
+
+        <%= f.submit "I want to play now !", :class => 'button success expand' %>
+      <% end %>
+    </div>
+    <!-- End Signin -->
+<!-- End Reveals -->

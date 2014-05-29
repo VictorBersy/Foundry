@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import "foundation/functions";
+$body-bg: #EFEFEF;
+$body-font-family: 'Lato', 'sans-serif';
+$body-font-color: #EFEFEF;
+$header-font-color: #EFEFEF;
+$row-width: rem-calc(1200);
+$reveal-modal-bg: rgba(219, 195, 173, 0.33);
+@import
+  "foundation/components/grid",
+  "foundation/components/alert-boxes",
+  "foundation/components/buttons",
+  "foundation/components/forms",
+  "foundation/components/reveal",
+  "foundation/components/type";
+.home {
+  h1 {
+    font-size: 3.4em;
+    display: inline;
+  }
+  background: url(image_path('home/bg.jpg'));
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .bg-center {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.30);
+    width: 100%;
+  }
+  .signup-button {
+    @include button($padding:$button-med, $bg:#6A8C8E, $radius:true,
+      $full-width:true, $disabled:false, $is-prefix:false)
+  }
+  .signin-button {
+    @include button($padding:$button-med, $bg:#836C60, $radius:true,
+      $full-width:true, $disabled:false, $is-prefix:false)
+  }
+  .come-on {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #EFEFEF;
+  }
+  .about {
+    font-weight: 300;
+    font-size: 1em;
+    margin-left: 10px;
+    color: #EFEFEF;
+  }
+}
+
+.form-reveal {
+  border-radius: 10px;
+  h4 {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    text-align: center;
+  }
+  input[type] {
+    border-radius: 0px 5px 5px 0px;
+  }
+  input:focus {
+    box-shadow: 0px 0px 25px #6A8C8E;
+  }
+  label { color: #FFF; }
+  label.prefix {
+    border: none;
+    background: #201D16;
+    border-radius: 5px 0px 0px 5px;
+  }
+}
+
