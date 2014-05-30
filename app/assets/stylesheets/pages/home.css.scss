@@ -58,9 +58,7 @@ $reveal-modal-bg: rgba(219, 195, 173, 0.33);
     color: #FFF;
     text-align: center;
   }
-  input[type] {
-    border-radius: 0px 5px 5px 0px;
-  }
+  input[type]:not([type="submit"]) { border-radius: 0px 5px 5px 0px; }
   input:focus {
     box-shadow: 0px 0px 25px #6A8C8E;
   }
