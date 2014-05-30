@@ -1,0 +1,27 @@
+fr:
+  pages:
+    home:
+      punchline: "Une nouvelle façon de jouer à Minecraft"
+      punchline_about: "En savoir plus"
+      come_on: "Inscrivez vous et rejoignez Foundry en avant première"
+      signup_button: "Créer un nouveau compte"
+      signin_button: "Connectez-vous"
+
+      signup_form_title: "Rejoindre Foundry"
+      signup_form_username_placeholder: "Choisissez un pseudo"
+      signup_form_email_placeholder: "Pour vous tenir au courant"
+      signup_form_password_placeholder: "Mot de passe"
+      signup_form_submit_button: "Enregistrez-moi. Je veux jouer !"
+
+      signin_form_title: "Se connecter à Foundry"
+      signin_form_username_email_placeholder: "Votre adresse email"
+      signin_form_password_placeholder: "Votre mot de passe"
+      signin_form_submit_button: "Jouer !"
+
+  helpers:
+    label:
+      user:
+        username: "Pseudo"
+        email: "Email"
+        password: "Mot de passe"
+        remember_me: "Se souvenir de moi"

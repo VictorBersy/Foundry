@@ -1,0 +1,19 @@
+en:
+  pages:
+    home:
+      punchline: "A new way to play Minecraft"
+      punchline_about: "Learn more"
+      come_on: "Sign up and join Foundry in premiere"
+      signup_button: "Sign up for a new account"
+      signin_button: "Sign in to your account"
+
+      signup_form_title: "Sign up for a Foundry account"
+      signup_form_username_placeholder: "Choose an username"
+      signup_form_email_placeholder: "Just to keep in touch"
+      signup_form_password_placeholder: "Password"
+      signup_form_submit_button: "Sign me up. I want to play!"
+
+      signin_form_title: "Signin to Foundry"
+      signin_form_username_email_placeholder: "Your email"
+      signin_form_password_placeholder: "Your password"
+      signin_form_submit_button: "Play!"
