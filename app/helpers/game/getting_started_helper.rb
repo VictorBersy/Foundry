@@ -1,0 +1,2 @@
+module Game::GettingStartedHelper
+end
