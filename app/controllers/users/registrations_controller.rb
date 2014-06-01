@@ -1,9 +1,11 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  # def new
-  #   super
-  # end
+  protected
 
-  # def create
-  #   super
-  # end
+  def sign_up_params
+    params.require(:user).permit(:username, :email, :password)
+  end
+
+  def after_sign_up_path_for(resource)
+    game_getting_started_welcome_path
+  end
 end
