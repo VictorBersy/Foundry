@@ -5,12 +5,18 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'high_voltage/pages#show', id: 'home'
 
-  devise_for :user,
+  devise_for :user, module: 'users',
     :path_names => {
       :sign_up  => 'signup',
       :sign_in  => 'signin',
       :sign_out => 'signout'
     }
+
+  namespace :game do
+    get 'getting_started/welcome'
+    get 'getting_started/generate'
+    get 'getting_started/play'
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
