@@ -1,18 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
-@import "foundation/functions";
-$body-bg: #EFEFEF;
-$body-font-family: 'Lato', 'sans-serif';
-$body-font-color: #EFEFEF;
-$header-font-color: #EFEFEF;
-$row-width: rem-calc(1200);
+@import "foundation/components/buttons";
 $reveal-modal-bg: rgba(219, 195, 173, 0.33);
-@import
-  "foundation/components/grid",
-  "foundation/components/alert-boxes",
-  "foundation/components/buttons",
-  "foundation/components/forms",
-  "foundation/components/reveal",
-  "foundation/components/type";
 .home {
   h1 {
     font-size: 3.4em;
