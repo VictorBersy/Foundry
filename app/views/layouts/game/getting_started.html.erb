@@ -1,0 +1,12 @@
+<div class="row collapse" data-equalizer>
+  <div class="small-4 columns">
+    <li class="button large expand" data-equalizer-watch>1. Welcome <%= current_user.screen_name %>!</li>
+  </div>
+  <div class="small-4 columns">
+    <li class="button large expand <%= if params[:action] == 'welcome' then 'disabled' end %>" data-equalizer-watch>2. Generate Your World</li>
+  </div>
+  <div class="small-4 columns">
+    <li class="button large expand <%= if params[:action] == 'generate' || 'welcome' then 'disabled' end %>" data-equalizer-watch>3. Play!</li>
+  </div>
+</div>
+<%= render :template => 'layouts/application', :locals => { flash: [] } %>
