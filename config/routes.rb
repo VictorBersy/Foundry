@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     }
 
   namespace :game do
+    get 'getting_started', to: redirect('game/getting_started/welcome')
     get 'getting_started/welcome'
     get 'getting_started/generate'
     get 'getting_started/play'
