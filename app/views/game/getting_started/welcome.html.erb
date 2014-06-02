@@ -1,2 +1,6 @@
-<h1>Game::GettingStarted#welcome</h1>
-<p>Find me in app/views/game/getting_started/welcome.html.erb</p>
+<div class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center">Welcome to Foundry, <%= current_user.screen_name %>!</h1>
+    <h2 class="text-center"><%= link_to "Let's start and generate your own unique world!", game_getting_started_generate_path %></h2>
+  </div>
+</div>
