@@ -6,6 +6,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'foundation-rails', '~> 5.2.2.0'
 gem 'high_voltage', '~> 2.1.0'
 gem 'devise', '~> 3.2.4'
+gem 'font-awesome-rails', '~> 4.1.0.0'
 
 group :development do
   gem 'spring', '~> 1.1.3'
